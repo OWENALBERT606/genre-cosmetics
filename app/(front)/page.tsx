@@ -803,25 +803,25 @@ const lifestyleProducts = [
     id: 2,
     title: 'Velvet Lip Collection',
     category: 'Lip Care',
-    image: 'https://images.unsplash.com/photo-1582307261502-c88ebcb34e41?q=80&w=1000&auto=format&fit=crop'
+    image: '/img-20220921-wa0028-jpg.jpg'
   },
   {
     id: 3,
     title: 'Luxury Brush Set',
     category: 'Tools',
-    image: 'https://images.unsplash.com/photo-1596462502278-27bfdd403ea6?q=80&w=1000&auto=format&fit=crop'
+    image: '/71FJHo+xdjL._AC_UF1000,1000_QL80_.jpg'
   },
   {
     id: 4,
     title: 'Radiance Foundation',
     category: 'Base',
-    image: 'https://images.unsplash.com/photo-1596462502278-27bfdd403ea6?q=80&w=1000&auto=format&fit=crop'
+    image: '/2150331705.jpg'
   },
   {
     id: 5,
     title: 'Eyeliner Perfection',
     category: 'Eyes',
-    image: 'https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=1000&auto=format&fit=crop'
+    image: '/images.jpg'
   },
   {
     id: 6,
@@ -1231,7 +1231,7 @@ export default function Page() {
             </div>
 
             {/* Right Column - Product Grid */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-3">
               <div className="opacity-0 animate-fadeInUp" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
                 <div className="rounded-2xl overflow-hidden h-48 mb-4 group cursor-pointer">
                   <img 
@@ -1247,7 +1247,7 @@ export default function Page() {
               <div className="opacity-0 animate-fadeInUp" style={{ animationDelay: '150ms', animationFillMode: 'forwards' }}>
                 <div className="rounded-2xl overflow-hidden h-48 mb-4 group cursor-pointer">
                   <img 
-                    src="https://images.unsplash.com/photo-1608248543803-ba4f8a3ae40d?q=80&w=800&auto=format&fit=crop"
+                    src="/rec.webp"
                     alt="Recovery Cream"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -1259,7 +1259,7 @@ export default function Page() {
               <div className="opacity-0 animate-fadeInUp" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
                 <div className="rounded-2xl overflow-hidden h-48 mb-4 group cursor-pointer">
                   <img 
-                    src="https://images.unsplash.com/photo-1512207736139-d5ea682817b9?q=80&w=800&auto=format&fit=crop"
+                    src="/natural-makeup-tutorials-black-women-hero-mudc-082223.webp"
                     alt="Eye Contour"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -1271,7 +1271,7 @@ export default function Page() {
               <div className="opacity-0 animate-fadeInUp" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
                 <div className="rounded-2xl overflow-hidden h-48 mb-4 group cursor-pointer">
                   <img 
-                    src="https://images.unsplash.com/photo-1571875257842-36bf93271659?q=80&w=800&auto=format&fit=crop"
+                    src="/The-INKEY-List-Ceramide-Night-Treatment-30ml_7cdb67ec-6b20-4b3c-b81e-d3ec604a7e80.d44a1ec5241a68cc608d3288ede09cd7.avif"
                     alt="Night Treatment"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
