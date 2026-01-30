@@ -745,21 +745,21 @@ const routines = [
     step: '2. Tone',
     title: 'Balancing Toner',
     description: 'Restore pH balance and prepare skin for serums',
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8a3ae40d?q=80&w=1887&auto=format&fit=crop'
+    image: '/71FJHo+xdjL._AC_UF1000,1000_QL80_.jpg'
   },
   {
     id: 3,
     step: '3. Treat',
     title: 'Active Serum',
     description: 'Target specific concerns with concentrated formulas',
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8a3ae40d?q=80&w=1887&auto=format&fit=crop'
+    image: '/f53580a6-bf13-4937-bd03-2f3ca7f2f7d3.webp'
   },
   {
     id: 4,
     step: '4. Moisturize',
     title: 'Luxury Moisturizer',
     description: 'Lock in hydration with protective barrier',
-    image: 'https://images.unsplash.com/photo-1512207736139-d5ea682817b9?q=80&w=1887&auto=format&fit=crop'
+    image: '/images.jpg'
   }
 ];
 
@@ -840,20 +840,21 @@ const productGallery = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1557804506-669714d2e745?q=80&w=1200&auto=format&fit=crop',
+    image: '/img-20220921-wa0028-jpg.jpg',
     title: 'Premium Serums'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1611356576337-b5f22a65b67c?q=80&w=1200&auto=format&fit=crop',
+    image: '/1425019_US_Group_01_600x600.avif',
     title: 'Skincare Essentials'
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8a3ae40d?q=80&w=1200&auto=format&fit=crop',
+    image: '/71FJHo+xdjL._AC_UF1000,1000_QL80_.jpg',
     title: 'Luxury Collection'
   }
 ];
+
 
 export default function Page() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -1054,7 +1055,7 @@ export default function Page() {
       </section>
 
       {/* ---------------- SKINCARE ROUTINE GUIDE ---------------- */}
-      <section className="py-24 bg-white">
+      <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#003B4F] mb-4">The Perfect Skincare Routine</h2>
@@ -1066,7 +1067,7 @@ export default function Page() {
               <div key={routine.id} className="text-center group cursor-pointer opacity-0 animate-fadeInUp" style={{ animationDelay: `${idx * 100}ms`, animationFillMode: 'forwards' }}>
                 <div className="relative h-64 rounded-2xl overflow-hidden mb-6 group-hover:shadow-xl transition-shadow">
                   <img 
-                    src={routine.image || "/placeholder.svg"}
+                    src={routine.image || "/71FJHo+xdjL._AC_UF1000,1000_QL80_.jpg"}
                     alt={routine.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -1083,7 +1084,7 @@ export default function Page() {
       </section>
 
       {/* ---------------- LIFESTYLE & COSMETICS PRODUCTS ---------------- */}
-      <section className="py-24 bg-white">
+      <section className="py-6 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#003B4F] mb-4">Beauty Beyond Skincare</h2>
@@ -1116,7 +1117,7 @@ export default function Page() {
       </section>
 
       {/* ---------------- PRODUCT GALLERY SHOWCASE ---------------- */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-6 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#003B4F] mb-4">Our Collections</h2>
@@ -1153,7 +1154,7 @@ export default function Page() {
       </section>
 
       {/* ---------------- KEY INGREDIENTS SHOWCASE ---------------- */}
-      <section className="py-24 bg-gradient-to-br from-[#003B4F]/5 to-[#2AB09C]/5">
+      <section className="py-8 bg-gradient-to-br from-[#003B4F]/5 to-[#2AB09C]/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#003B4F] mb-4">Powerhouse Ingredients</h2>
@@ -1189,7 +1190,7 @@ export default function Page() {
       </section>
 
       {/* ---------------- PRODUCT CLOSE-UP GALLERY ---------------- */}
-      <section className="py-24">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#003B4F] mb-4">Premium Formulations</h2>
