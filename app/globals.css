@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   GENRE COSMETICS DESIGN TOKENS
+   Brand palette: Teal • Leaf Green • Golden Beauty
+   Inspired by beauty & nature
+========================================================= */
+
+:root {
+  /* ---------- Light Mode ---------- */
+
+  --background: oklch(0.985 0.002 160);
+  --foreground: oklch(0.22 0.03 200);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.03 200);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.03 200);
+
+  /* 🌊 Primary – Teal (Logo Text) */
+  --primary: oklch(0.67 0.13 190);
+  --primary-foreground: oklch(1 0 0);
+
+  /* 🍃 Secondary – Leaf Green */
+  --secondary: oklch(0.80 0.15 145);
+  --secondary-foreground: oklch(0.22 0.03 200);
+
+  --muted: oklch(0.96 0.01 160);
+  --muted-foreground: oklch(0.45 0.03 200);
+
+  /* ✨ Accent – Golden Beauty */
+  --accent: oklch(0.82 0.16 85);
+  --accent-foreground: oklch(0.25 0.04 85);
+
+  --destructive: oklch(0.60 0.22 25);
+  --destructive-foreground: oklch(1 0 0);
+
+  --border: oklch(0.92 0.005 200);
+  --input: oklch(0.96 0.005 200);
+  --ring: oklch(0.67 0.13 190);
+
+  /* Charts */
+  --chart-1: oklch(0.67 0.13 190);
+  --chart-2: oklch(0.80 0.15 145);
+  --chart-3: oklch(0.82 0.16 85);
+  --chart-4: oklch(0.62 0.14 260);
+  --chart-5: oklch(0.65 0.12 220);
+
+  --radius: 0.75rem;
+
+  /* Sidebar */
+  --sidebar: oklch(0.99 0.002 160);
+  --sidebar-foreground: oklch(0.22 0.03 200);
+  --sidebar-primary: oklch(0.67 0.13 190);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.94 0.02 160);
+  --sidebar-accent-foreground: oklch(0.22 0.03 200);
+  --sidebar-border: oklch(0.92 0.005 200);
+  --sidebar-ring: oklch(0.67 0.13 190);
+
+  /* Effects */
+  --teal-glow: oklch(0.67 0.13 190 / 0.3);
+  --green-glow: oklch(0.80 0.15 145 / 0.3);
+
+  --gradient-start: oklch(0.67 0.13 190);
+  --gradient-end: oklch(0.80 0.15 145);
+}
+
+/* =========================================================
+   DARK MODE – Luxury / Beauty Feel
+========================================================= */
+
+.dark {
+  --background: oklch(0.13 0.02 200);
+  --foreground: oklch(0.96 0.005 160);
+
+  --card: oklch(0.17 0.02 200);
+  --card-foreground: oklch(0.96 0.005 160);
+
+  --popover: oklch(0.17 0.02 200);
+  --popover-foreground: oklch(0.96 0.005 160);
+
+  --primary: oklch(0.72 0.14 190);
+  --primary-foreground: oklch(0.13 0.02 200);
+
+  --secondary: oklch(0.70 0.14 145);
+  --secondary-foreground: oklch(0.12 0.02 200);
+
+  --muted: oklch(0.22 0.02 200);
+  --muted-foreground: oklch(0.65 0.02 160);
+
+  --accent: oklch(0.85 0.16 85);
+  --accent-foreground: oklch(0.12 0.02 200);
+
+  --destructive: oklch(0.62 0.24 25);
+  --destructive-foreground: oklch(0.98 0.005 60);
+
+  --border: oklch(0.28 0.02 200);
+  --input: oklch(0.22 0.02 200);
+  --ring: oklch(0.72 0.14 190);
+
+  --sidebar: oklch(0.15 0.02 200);
+  --sidebar-foreground: oklch(0.94 0.005 160);
+  --sidebar-primary: oklch(0.72 0.14 190);
+  --sidebar-primary-foreground: oklch(0.13 0.02 200);
+  --sidebar-accent: oklch(0.22 0.02 200);
+  --sidebar-accent-foreground: oklch(0.94 0.005 160);
+  --sidebar-border: oklch(0.28 0.02 200);
+  --sidebar-ring: oklch(0.72 0.14 190);
+}
+
+/* =========================================================
+   BASE STYLES
+========================================================= */
+
+@layer base {
+  * {
+    @apply border-border;
+    outline-color: var(--ring);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: oklch(0.67 0.13 190 / 0.3);
+    color: oklch(0.22 0.03 200);
+  }
+
+  .dark ::selection {
+    background-color: oklch(0.72 0.14 190 / 0.4);
+    color: oklch(0.98 0.005 160);
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
+
+/* =========================================================
+   COMPONENTS
+========================================================= */
+
+@layer components {
+  .btn-primary-gradient {
+    @apply bg-gradient-to-r from-teal-500 to-green-500 text-white font-medium;
+    @apply hover:shadow-lg hover:shadow-teal-500/30 transition-all;
+    @apply hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .card-hover {
+    @apply bg-card border border-border rounded-xl transition-all duration-300;
+    @apply hover:shadow-xl hover:border-teal-300;
+    @apply dark:hover:border-teal-700;
+  }
+
+  .glass {
+    @apply bg-white/80 dark:bg-slate-900/70 backdrop-blur-xl;
+    @apply border border-white/20 dark:border-slate-700/50;
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 40px var(--teal-glow);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 40px var(--green-glow);
+  }
+
+  .badge-teal {
+    @apply bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400;
+    @apply inline-flex px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-green {
+    @apply bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400;
+    @apply inline-flex px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-gold {
+    @apply bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400;
+    @apply inline-flex px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+}
+
+/* =========================================================
+   UTILITIES
+========================================================= */
+
+@layer utilities {
+  .text-gradient-brand {
+    @apply bg-gradient-to-r from-teal-500 via-green-400 to-amber-400;
+    @apply bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-brand {
+    @apply bg-gradient-to-br from-teal-500 to-green-500;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-16px); }
+  }
+}
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
