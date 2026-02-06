@@ -676,7 +676,7 @@ const featuredProducts = [
     id: 1,
     name: 'Acne Control Serum',
     price: '45,000 UGX',
-    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.14.49.jpeg',
     tag: 'Best Seller',
     description: 'Salicylic acid & niacinamide blend'
   },
@@ -684,7 +684,7 @@ const featuredProducts = [
     id: 2,
     name: 'Beauty Glow Capsules',
     price: '75,000 UGX',
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030&auto=format&fit=crop',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.03.jpeg',
     tag: 'Trending',
     description: 'Marine collagen & biotin'
   },
@@ -692,7 +692,7 @@ const featuredProducts = [
     id: 3,
     name: 'Dark Spot Eraser',
     price: '52,000 UGX',
-    image: 'https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=1780&auto=format&fit=crop',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg',
     tag: 'New',
     description: 'Vitamin C & licorice extract'
   },
@@ -700,7 +700,7 @@ const featuredProducts = [
     id: 4,
     name: 'Hydration Moisturizer',
     price: '48,000 UGX',
-    image: 'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?q=80&w=1887&auto=format&fit=crop',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg',
     tag: 'Popular',
     description: 'Hyaluronic acid & ceramides'
   }
@@ -713,21 +713,21 @@ const testimonials = [
     author: 'Amina K.',
     rating: 5,
     text: 'My skin has never felt better! The results are visible within weeks. Highly recommended!',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg'
   },
   {
     id: 2,
     author: 'Zainab M.',
     rating: 5,
     text: 'Finally found products that work for my sensitive African skin. No irritation, only glow!',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg'
   },
   {
     id: 3,
     author: 'Nia T.',
     rating: 5,
     text: 'The difference in my skin texture and tone is incredible. Worth every penny!',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1887&auto=format&fit=crop'
+    image: 'public/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg'
   }
 ];
 
@@ -738,28 +738,28 @@ const routines = [
     step: '1. Cleanse',
     title: 'Gentle Cleanser',
     description: 'Remove impurities without disrupting skin barrier',
-    image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?q=80&w=1887&auto=format&fit=crop'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.14.49.jpeg'
   },
   {
     id: 2,
     step: '2. Tone',
     title: 'Balancing Toner',
     description: 'Restore pH balance and prepare skin for serums',
-    image: '/71FJHo+xdjL._AC_UF1000,1000_QL80_.jpg'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.03.jpeg'
   },
   {
     id: 3,
     step: '3. Treat',
     title: 'Active Serum',
     description: 'Target specific concerns with concentrated formulas',
-    image: '/f53580a6-bf13-4937-bd03-2f3ca7f2f7d3.webp'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg'
   },
   {
     id: 4,
     step: '4. Moisturize',
     title: 'Luxury Moisturizer',
     description: 'Lock in hydration with protective barrier',
-    image: '/images.jpg'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg'
   }
 ];
 
@@ -1460,8 +1460,6 @@ export default function Page() {
           </form>
         </div>
       </section>
-
-      <Footer />
 
       <style jsx>{`
         @keyframes slideUp {
