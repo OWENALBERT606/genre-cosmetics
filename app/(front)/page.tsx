@@ -835,24 +835,19 @@ const lifestyleProducts = [
 const productGallery = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1200&auto=format&fit=crop',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.14.49.jpeg',
     title: 'Complete Beauty Line'
   },
   {
     id: 2,
-    image: '/img-20220921-wa0028-jpg.jpg',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.03.jpeg',
     title: 'Premium Serums'
   },
   {
     id: 3,
-    image: '/1425019_US_Group_01_600x600.avif',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg',
     title: 'Skincare Essentials'
   },
-  {
-    id: 4,
-    image: '/71FJHo+xdjL._AC_UF1000,1000_QL80_.jpg',
-    title: 'Luxury Collection'
-  }
 ];
 
 
