@@ -416,7 +416,7 @@ const allProducts = [
     gender: 'Both',
     price: 45000,
     rating: 4.5,
-    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.14.49.jpeg',
     description: 'Medicated serum targeting acne and pimples with advanced actives',
   },
   {
@@ -436,7 +436,7 @@ const allProducts = [
     gender: 'Both',
     price: 58000,
     rating: 4.8,
-    image: '/f53580a6-bf13-4937-bd03-2f3ca7f2f7d3.webp',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.03.jpeg',
     description: 'Rich cream for damaged skin repair and texture improvement',
   },
   {
@@ -446,18 +446,8 @@ const allProducts = [
     gender: 'Women',
     price: 75000,
     rating: 4.9,
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030&auto=format&fit=crop',
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg',
     description: 'Premium supplement for skin luminosity and hair health',
-  },
-  {
-    id: 5,
-    name: 'Glow skin',
-    category: 'Supplements',
-    gender: 'Both',
-    price: 89000,
-    rating: 5,
-    image: '/img-20220921-wa0028-jpg.jpg',
-    description: 'Advanced collagen formula for skin elasticity and repair',
   },
 ];
 
