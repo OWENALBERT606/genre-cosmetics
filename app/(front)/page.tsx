@@ -803,13 +803,13 @@ const lifestyleProducts = [
     id: 2,
     title: 'Velvet Lip Collection',
     category: 'Lip Care',
-    image: '/img-20220921-wa0028-jpg.jpg'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg'
   },
   {
     id: 3,
     title: 'Luxury Brush Set',
     category: 'Tools',
-    image: '/71FJHo+xdjL._AC_UF1000,1000_QL80_.jpg'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.15.03.jpeg'
   },
   {
     id: 4,
@@ -821,7 +821,7 @@ const lifestyleProducts = [
     id: 5,
     title: 'Eyeliner Perfection',
     category: 'Eyes',
-    image: '/images.jpg'
+    image: '/best/WhatsApp Image 2026-01-24 at 12.14.49.jpeg'
   },
   {
     id: 6,
