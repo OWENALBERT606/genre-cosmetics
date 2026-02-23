@@ -64,7 +64,7 @@
 //   },
 //   {
 //     id: 4,
-//     name: 'Hydration Moisturizer',
+//     name: 'Glo soap',
 //     price: '48,000 UGX',
 //     image: 'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?q=80&w=1887&auto=format&fit=crop',
 //     tag: 'Popular',
@@ -674,7 +674,7 @@ const slides = [
 const featuredProducts = [
   {
     id: 1,
-    name: 'Acne Control Serum',
+    name: 'Glo Skin Soap',
     price: '45,000 UGX',
     image: '/best/WhatsApp Image 2026-01-24 at 12.14.49.jpeg',
     tag: 'Best Seller',
@@ -690,7 +690,7 @@ const featuredProducts = [
   },
   {
     id: 3,
-    name: 'Dark Spot Eraser',
+    name: 'Glo Soap',
     price: '52,000 UGX',
     image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg',
     tag: 'New',
@@ -698,7 +698,7 @@ const featuredProducts = [
   },
   {
     id: 4,
-    name: 'Hydration Moisturizer',
+    name: 'Glo soap',
     price: '48,000 UGX',
     image: '/best/WhatsApp Image 2026-01-24 at 12.15.13.jpeg',
     tag: 'Popular',
